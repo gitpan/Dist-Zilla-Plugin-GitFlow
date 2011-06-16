@@ -24,6 +24,7 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Class::MOP' => '0',
     'Dist::Zilla' => '4',
+    'Dist::Zilla::Plugin::Git' => '0',
     'Dist::Zilla::Plugin::NextRelease' => '0',
     'Dist::Zilla::Role::AfterMint' => '0',
     'Dist::Zilla::Role::PluginBundle::Easy' => '0',
@@ -36,7 +37,7 @@ my %WriteMakefileArgs = (
     'namespace::autoclean' => '0.09',
     'version' => '0.80'
   },
-  'VERSION' => '0.004',
+  'VERSION' => '0.006',
   'test' => {
     'TESTS' => 't/*.t'
   }

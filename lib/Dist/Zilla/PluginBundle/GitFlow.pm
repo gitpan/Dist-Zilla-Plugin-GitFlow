@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::GitFlow;
 BEGIN {
-  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.004';
+  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.006';
 }
 # ABSTRACT: all git-flow plugins in one go
 
@@ -41,7 +41,7 @@ Dist::Zilla::PluginBundle::GitFlow - all git-flow plugins in one go
 
 =head1 VERSION
 
-version 0.004
+version 0.006
 
 =head1 SYNOPSIS
 

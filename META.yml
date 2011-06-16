@@ -16,6 +16,7 @@ name: Dist-Zilla-Plugin-GitFlow
 requires:
   Class::MOP: 0
   Dist::Zilla: 4
+  Dist::Zilla::Plugin::Git: 0
   Dist::Zilla::Plugin::NextRelease: 0
   Dist::Zilla::Role::AfterMint: 0
   Dist::Zilla::Role::PluginBundle::Easy: 0
@@ -29,4 +30,4 @@ requires:
   perl: 5.010
   version: 0.80
 resources: {}
-version: 0.004
+version: 0.006

@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow::Init;
 BEGIN {
-  $Dist::Zilla::Plugin::GitFlow::Init::VERSION = '0.004';
+  $Dist::Zilla::Plugin::GitFlow::Init::VERSION = '0.006';
 }
 # ABSTRACT: initialize git repository and git-flow setting on dzil new
 
@@ -148,7 +148,7 @@ Dist::Zilla::Plugin::GitFlow::Init - initialize git repository and git-flow sett
 
 =head1 VERSION
 
-version 0.004
+version 0.006
 
 =head1 SYNOPSIS
 
