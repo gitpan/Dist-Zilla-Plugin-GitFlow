@@ -1,0 +1,111 @@
+package Dist::Zilla::Plugin::GitFlow;
+BEGIN {
+  $Dist::Zilla::Plugin::GitFlow::VERSION = '0.004';
+}
+# ABSTRACT: develop perl modules with git-flow and Dist::Zilla
+
+use 5.008;
+use strict;
+use warnings;
+
+use Dist::Zilla 2.100880;    # Need mvp_multivalue_args in Plugin role
+1;
+
+
+__END__
+=pod
+
+=encoding utf-8
+
+=head1 NAME
+
+Dist::Zilla::Plugin::GitFlow - develop perl modules with git-flow and Dist::Zilla
+
+=head1 VERSION
+
+version 0.004
+
+=head1 SYNOPSIS
+
+In your F<dist.ini>:
+
+[@GitFlow]
+
+=head1 DESCRIPTION
+
+This set of plugins for L<Dist::Zilla> can do interesting things for
+module authors using L<git|http://git- scm.com> to track their work. The
+following plugins are provided in this distribution:
+
+=over 4
+
+=item * L<Dist::Zilla::Plugin::GitFlow::Init>
+
+=item * L<Dist::Zilla::Plugin::GitFlow::NextVersion>
+
+=item * L<Dist::Zilla::Plugin::GitFlow::NextRelease>
+
+=back
+
+It also provice plugin bundle:
+
+=over 4
+
+=item * L<Dist::Zilla::PluginBundle::GitFlow>
+
+=back
+
+This plugin use it's own next version and next release module,
+so do not use original L<Dist::Zilla::Plugin::NextRelease>
+and L<Dist::Zilla::Plugin::NextVersion> plugins.
+
+=head1 SEE ALSO
+
+I stolen almost code from L<Dist::Zilla::Plugin::Git>.
+Please check original code.
+
+=over 4
+
+=item * L<Dist::Zilla::Plugin::Git>
+
+=item * L<Dist::Zilla::Plugin::NextVersion>
+
+=item * L<Dist::Zilla::Plugin::NextRelease>
+
+=back
+
+You can look for information on this module at:
+
+=over 4
+
+=item * A successful Git branching model
+
+L<http://nvie.com/posts/a-successful-git-branching-model/>
+
+=item * git-flow git repository
+
+L<https://github.com/nvie/gitflow>
+
+=item * See open / report bugs
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dist-Zilla-Plugin-GitFlow>
+
+=item * Git repository
+
+L<http://github.com/jquelin/dist-zilla-plugin-git>
+
+=back
+
+=head1 AUTHOR
+
+Keedi Kim - 김도형 <keedi@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Keedi Kim.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+

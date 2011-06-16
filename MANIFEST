@@ -1,0 +1,17 @@
+Changes
+INSTALL
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+README.mkdn
+dist.ini
+lib/Dist/Zilla/Plugin/GitFlow.pm
+lib/Dist/Zilla/Plugin/GitFlow/Init.pm
+lib/Dist/Zilla/Plugin/GitFlow/NextRelease.pm
+lib/Dist/Zilla/Plugin/GitFlow/NextVersion.pm
+lib/Dist/Zilla/PluginBundle/GitFlow.pm
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+weaver.ini

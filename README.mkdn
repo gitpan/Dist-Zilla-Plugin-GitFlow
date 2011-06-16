@@ -1,0 +1,69 @@
+# NAME
+
+Dist::Zilla::Plugin::GitFlow - develop perl modules with git-flow and Dist::Zilla
+
+# VERSION
+
+version 0.004
+
+# SYNOPSIS
+
+In your `dist.ini`:
+
+[@GitFlow]
+
+# DESCRIPTION
+
+This set of plugins for [Dist::Zilla](http://search.cpan.org/perldoc?Dist::Zilla) can do interesting things for
+module authors using [git](http://git- scm.com) to track their work. The
+following plugins are provided in this distribution:
+
+- [Dist::Zilla::Plugin::GitFlow::Init](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::GitFlow::Init)
+- [Dist::Zilla::Plugin::GitFlow::NextVersion](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::GitFlow::NextVersion)
+- [Dist::Zilla::Plugin::GitFlow::NextRelease](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::GitFlow::NextRelease)
+
+It also provice plugin bundle:
+
+- [Dist::Zilla::PluginBundle::GitFlow](http://search.cpan.org/perldoc?Dist::Zilla::PluginBundle::GitFlow)
+
+This plugin use it's own next version and next release module,
+so do not use original [Dist::Zilla::Plugin::NextRelease](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::NextRelease)
+and [Dist::Zilla::Plugin::NextVersion](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::NextVersion) plugins.
+
+# SEE ALSO
+
+I stolen almost code from [Dist::Zilla::Plugin::Git](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::Git).
+Please check original code.
+
+- [Dist::Zilla::Plugin::Git](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::Git)
+- [Dist::Zilla::Plugin::NextVersion](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::NextVersion)
+- [Dist::Zilla::Plugin::NextRelease](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::NextRelease)
+
+You can look for information on this module at:
+
+- A successful Git branching model
+
+[http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
+
+- git-flow git repository
+
+[https://github.com/nvie/gitflow](https://github.com/nvie/gitflow)
+
+- See open / report bugs
+
+[http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dist-Zilla-Plugin-GitFlow](http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dist-Zilla-Plugin-GitFlow)
+
+- Git repository
+
+[http://github.com/jquelin/dist-zilla-plugin-git](http://github.com/jquelin/dist-zilla-plugin-git)
+
+# AUTHOR
+
+Keedi Kim - 김도형 <keedi@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Keedi Kim.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

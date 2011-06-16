@@ -1,0 +1,32 @@
+---
+abstract: 'develop perl modules with git-flow and Dist::Zilla'
+author:
+  - 'Keedi Kim - 김도형 <keedi@cpan.org>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-Plugin-GitFlow
+requires:
+  Class::MOP: 0
+  Dist::Zilla: 4
+  Dist::Zilla::Plugin::NextRelease: 0
+  Dist::Zilla::Role::AfterMint: 0
+  Dist::Zilla::Role::PluginBundle::Easy: 0
+  Dist::Zilla::Role::VersionProvider: 0
+  Git::Wrapper: 0
+  Moose: 0
+  String::Formatter: 0
+  Try::Tiny: 0
+  Version::Next: 0
+  namespace::autoclean: 0.09
+  perl: 5.010
+  version: 0.80
+resources: {}
+version: 0.004
