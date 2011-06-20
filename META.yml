@@ -19,7 +19,7 @@ requires:
   Dist::Zilla::Plugin::Git: 0
   Dist::Zilla::Plugin::NextRelease: 0
   Dist::Zilla::Role::AfterMint: 0
-  Dist::Zilla::Role::PluginBundle::Easy: 0
+  Dist::Zilla::Role::PluginBundle: 0
   Dist::Zilla::Role::VersionProvider: 0
   Git::Wrapper: 0
   Moose: 0
@@ -30,4 +30,4 @@ requires:
   perl: 5.010
   version: 0.80
 resources: {}
-version: 0.006
+version: 0.008

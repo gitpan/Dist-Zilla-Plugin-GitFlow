@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow;
 BEGIN {
-  $Dist::Zilla::Plugin::GitFlow::VERSION = '0.006';
+  $Dist::Zilla::Plugin::GitFlow::VERSION = '0.008';
 }
 # ABSTRACT: develop perl modules with git-flow and Dist::Zilla
 
@@ -23,13 +23,33 @@ Dist::Zilla::Plugin::GitFlow - develop perl modules with git-flow and Dist::Zill
 
 =head1 VERSION
 
-version 0.006
+version 0.008
 
 =head1 SYNOPSIS
 
 In your F<dist.ini>:
 
-[@GitFlow]
+    [@GitFlow]
+
+When you want to release the module on the develop branch:
+
+    $ git flow release start 0.003
+    #
+    # edit and commit
+    #
+    $ dzil release
+    $ git flow release finish 0.003
+
+After finishing release, then upload your released module:
+
+    $ git checkout v0.003
+    $ dzil build
+    $ cpan-upload YourModule-0.003.tar.gz
+
+If you want to make specific version module tarball:
+
+    $ git checkout v0.002
+    $ dzil build
 
 =head1 DESCRIPTION
 

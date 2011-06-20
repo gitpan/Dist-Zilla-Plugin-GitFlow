@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow::NextVersion;
 BEGIN {
-  $Dist::Zilla::Plugin::GitFlow::NextVersion::VERSION = '0.006';
+  $Dist::Zilla::Plugin::GitFlow::NextVersion::VERSION = '0.008';
 }
 # ABSTRACT: provide a version number by bumping the last git flow release tag
 
@@ -95,7 +95,7 @@ Dist::Zilla::Plugin::GitFlow::NextVersion - provide a version number by bumping 
 
 =head1 VERSION
 
-version 0.006
+version 0.008
 
 =head1 SYNOPSIS
 
@@ -104,24 +104,6 @@ In your F<dist.ini>:
     [GitFlow::NextVersion]
     first_version = 0.001    ; this is the default
     version_regexp = ^v(.+)$ ; this is the default
-
-When you want to release the module on the develop branch:
-
-    $ git flow release start 0.003
-    #
-    # edit and commit
-    #
-    $ git flow release finish 0.003
-
-After finishing release, then upload your released module:
-
-    $ git checkout v0.003
-    $ dzil release # this will be done with Dist::Zilla::Plugin::UploadToCPAN
-
-If you want to make specific version module tarball:
-
-    $ git checkout v0.002
-    $ dzil build
 
 =head1 DESCRIPTION
 
