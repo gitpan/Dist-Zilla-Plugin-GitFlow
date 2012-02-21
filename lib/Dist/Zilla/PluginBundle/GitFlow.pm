@@ -1,10 +1,9 @@
 package Dist::Zilla::PluginBundle::GitFlow;
-BEGIN {
-  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.008';
+{
+  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.009';
 }
 # ABSTRACT: all git-flow plugins in one go
 
-use 5.010;
 use Moose;
 use Class::MOP;
 
@@ -64,7 +63,7 @@ Dist::Zilla::PluginBundle::GitFlow - all git-flow plugins in one go
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 

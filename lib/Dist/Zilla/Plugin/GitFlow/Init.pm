@@ -1,10 +1,9 @@
 package Dist::Zilla::Plugin::GitFlow::Init;
-BEGIN {
-  $Dist::Zilla::Plugin::GitFlow::Init::VERSION = '0.008';
+{
+  $Dist::Zilla::Plugin::GitFlow::Init::VERSION = '0.009';
 }
 # ABSTRACT: initialize git repository and git-flow setting on dzil new
 
-use 5.010;
 use Moose;
 
 our %transform = (
@@ -148,7 +147,7 @@ Dist::Zilla::Plugin::GitFlow::Init - initialize git repository and git-flow sett
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 
