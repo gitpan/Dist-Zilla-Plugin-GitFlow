@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::GitFlow;
 {
-  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.009';
+  $Dist::Zilla::PluginBundle::GitFlow::VERSION = '0.010';
 }
 # ABSTRACT: all git-flow plugins in one go
 
@@ -34,10 +34,8 @@ sub bundle_config {
     for my $name (@bundled_plugins) {
         my $class = "Dist::Zilla::Plugin::$name";
         my %payload;
-        given ($name) {
-            when ('Git::Commit') {
-                $payload{'commit_msg'} = 'Bump up to v%v%n%n%c';
-            }
+        if ($name eq 'Git::Commit') {
+            $payload{'commit_msg'} = 'Bump up to v%v%n%n%c';
         }
         foreach my $k (keys %$arg) {
             $payload{$k} = $arg->{$k} if $class->can($k);
@@ -63,7 +61,7 @@ Dist::Zilla::PluginBundle::GitFlow - all git-flow plugins in one go
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 

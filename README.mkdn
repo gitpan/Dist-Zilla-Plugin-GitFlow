@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::GitFlow - develop perl modules with git-flow and Dist::Zill
 
 # VERSION
 
-version 0.009
+version 0.010
 
 # SYNOPSIS
 

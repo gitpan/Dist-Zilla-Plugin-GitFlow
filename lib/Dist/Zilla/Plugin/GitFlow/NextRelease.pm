@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow::NextRelease;
 {
-  $Dist::Zilla::Plugin::GitFlow::NextRelease::VERSION = '0.009';
+  $Dist::Zilla::Plugin::GitFlow::NextRelease::VERSION = '0.010';
 }
 # ABSTRACT: update the next release number in your changelog
 
@@ -88,7 +88,7 @@ Dist::Zilla::Plugin::GitFlow::NextRelease - update the next release number in yo
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 

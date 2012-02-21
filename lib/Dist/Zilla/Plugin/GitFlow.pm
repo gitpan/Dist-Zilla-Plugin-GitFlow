@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow;
 {
-  $Dist::Zilla::Plugin::GitFlow::VERSION = '0.009';
+  $Dist::Zilla::Plugin::GitFlow::VERSION = '0.010';
 }
 # ABSTRACT: develop perl modules with git-flow and Dist::Zilla
 
@@ -23,7 +23,7 @@ Dist::Zilla::Plugin::GitFlow - develop perl modules with git-flow and Dist::Zill
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 

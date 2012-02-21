@@ -1,6 +1,7 @@
 Release history for Dist-Zilla-Plugin-GitFlow
 
-0.009     2012-02-21 21:22:16 Asia/Seoul
+0.010     2012-02-21 21:35:12 Asia/Seoul
+    - remove needless 5.010 pragma
 
 0.008     2011-06-20 16:03:48 Asia/Seoul
     - support bundle config

@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::GitFlow::NextVersion;
 {
-  $Dist::Zilla::Plugin::GitFlow::NextVersion::VERSION = '0.009';
+  $Dist::Zilla::Plugin::GitFlow::NextVersion::VERSION = '0.010';
 }
 # ABSTRACT: provide a version number by bumping the last git flow release tag
 
@@ -93,7 +93,7 @@ Dist::Zilla::Plugin::GitFlow::NextVersion - provide a version number by bumping 
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 
